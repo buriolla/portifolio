@@ -20,7 +20,21 @@ app.config(function ($translateProvider) {
         MESSAGE_LABEL: 'Message',
         SUBIMIT_MESSAGE: 'Submit Message',
         INPUT_NAME: 'Your Name',
-        INPUT_EMAIL: 'Your Email Adress'
+        INPUT_EMAIL: 'Your Email Adress',
+        ST_IT_OCCUPATION: 'Senior .Net Software Engineer (2015-02 / Actual moment)',
+        ST_IT_DESCRIPTION: 'Responsible for SOA (Service-Oriented Architecture) application maintenance whose front-end was developed in Silverlight (C #) in the MVVM pattern and the back-end technology developed using the WCF (C #) under the three layers pattern.',
+        DIGISYSTEM_OCCUPATION: 'Senior .Net Software Engineer (2010-10 / 2015-02)',
+        DIGISYSTEM_DESCRIPTION: 'Working as developer in several projects under the model of software house. Application development with the following technologies: C #, VB.NET, ASP.NET, .NET MVC, Web API .NET, WCF, ASP, VB6, SQL Server Database, Microsoft Integration Services, Oracle Database, Xamarim for Android, Javascript, AngularJS, JQuery and Microsoft Sharepoint.',
+        HAZIT_OCCUPATION: '.Net Software Engineer (2009-09 / 2010-10)',
+        HAZIT_DESCRIPTION: 'Maintenance of ASP.NET systems (C #) developed for online games segment, mainly ecommerce as well as the development of tools for use within the company.',
+        POLITEC_OCCUPATION: '.Net Software Engineer (2008-10 / 2009-07)',
+        POLITEC_DESCRIPTION: 'Working as developer on projects for the government sector (finance and human resources) using the ASP.NET technologies (C #), Javascript and Oracle Database.',
+        EXPERIENCE_SUBTITLE: 'Learn a little more about my professional experience.',
+        EDUCATION_SUBTITLE: 'Know where I graduated',
+        FATEC_COURSE: 'Technologist in Data Processing - <strong>Graduated:</strong> 2008',
+        FATEC_DESCRIPTION: 'I always liked technology, since I was a kid, so i decided to graduate myself in data processing on FATEC Taquaritinga mainly because it&rsquo;s a recognized technology college in São Paulo state. Differently from other colleges, the FATEC courses are focused on preparing their students for the market and not for the academic or research carrer. There I figured out how challenging can be the software development and was there that I discovered what I pretend to do till the end of my carrer.',
+        UNINOVE_COURSE: 'Information Technology Management - <strong>Graduated:</strong> 2015',
+        UNINOVE_DESCRIPTION: 'After working in software development during some years, I decided to change a little bit the focus of my career and know more about how the IT management works. Then I started one new graduate, the course "Information Technology Management" at Uninove. This decision really changed my understanding of software development process and helped a lot to shape my professional posture since. Now I can have a better understand about some management decisions that I always questioned before the course.'
         
     });
     $translateProvider.translations('br', {
@@ -41,7 +55,21 @@ app.config(function ($translateProvider) {
         MESSAGE_LABEL: 'Mensagem',
         SUBIMIT_MESSAGE: 'Enviar Mensagem',
         INPUT_NAME: 'Seu Nome',
-        INPUT_EMAIL: 'Seu Endereço de Email'
+        INPUT_EMAIL: 'Seu Endereço de Email',
+        ST_IT_OCCUPATION: 'Desenvolvedor .NET Sênior (02/2015 - Até o momento)',
+        ST_IT_DESCRIPTION: 'Responsável pela manutenção de aplicação SOA (Aplicação orientada a serviço) cujo front-end foi desenvolvido em Silverlight (C#) e o back-end desenvolvido utilizando a tecnologia WCF (C#)',
+        DIGISYSTEM_OCCUPATION: 'Desenvolvedor .NET Sênior (10/2010 - 02/2015)',
+        DIGISYSTEM_DESCRIPTION: 'Atuação como desenvolvedor em diversos projetos sob o modelo de fabrica de software. Desenvolvimento de aplicação com as tecnologias C#, VB.NET, ASP.NET, .NET MVC, .NET Web API, WCF, ASP, VB6, SQL Server Database, Microsoft Integration Services, Oracle Database, Xamarim for Android, Javascript, AngularJS, JQuery e Microsoft Sharepoint.',
+        HAZIT_OCCUPATION: 'Desenvolvedor .NET (09/2009 - 10/2010)',
+        HAZIT_DESCRIPTION: 'Manutenção de sistemas ASP.NET (C#) voltados para e-commerce do segmento de jogos, bem como o desenvolvimento de ferramentas para uso interno da compania.',
+        POLITEC_OCCUPATION: 'Desenvolvedor .NET (10/2008 - 07/2009)',
+        POLITEC_DESCRIPTION: 'Atuação como desenvolvedor em projetos para o setor governamental utilizando as tecnologias ASP.NET (C#), Javascript e Oracle Database.',
+        EXPERIENCE_SUBTITLE: 'Conheça um pouco mais sobre minha experiência profissional.',
+        EDUCATION_SUBTITLE: 'Saiba onde me formei',
+        FATEC_COURSE: 'Técnologo em Processamento de Dados - <strong>Graduado em:</strong> 2008',
+        FATEC_DESCRIPTION: 'Eu sempre gostei de tecnologia, desde que eu era uma criança, então eu decidi me formar em processamento de dados na FATEC Taquaritinga principalmente porque é uma faculdade de tecnologia reconhecida no Estado de São Paulo. Diferentemente de outras faculdades, cursos Fatec estão focados na preparação de seus alunos para o mercado e não para a carreira acadêmica ou de pesquisa. Lá eu descobri como um desafio pode ser o desenvolvimento de software e foi aí que eu descobri o que eu pretendo fazer até o fim da minha carreira.',
+        UNINOVE_COURSE: 'Gestão em Tecnologia da Informação - <strong>Graduado em:</strong> 2015',
+        UNINOVE_DESCRIPTION: 'Depois de trabalhar no desenvolvimento de software, durante alguns anos, decidi mudar um pouco o foco da minha carreira e saber mais sobre como funciona o gerenciamento de TI. Então eu comecei uma nova graduação, o curso "Gestão de Tecnologia da Informação" na Uninove. Esta decisão realmente mudou minha compreensão do processo de desenvolvimento de software e ajudou muito a moldar a minha postura profissional desde então. Agora eu posso ter uma melhor compreensão sobre algumas decisões de gestão que eu sempre questionei antes do curso.'
     });
     $translateProvider.preferredLanguage('br');
     $translateProvider.useSanitizeValueStrategy('sanitize');

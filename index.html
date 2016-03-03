@@ -190,25 +190,25 @@
             <header class="section-header">
                 <h2 class="section-title"><span ng-bind-html="'EDUCATION' | translate "></span></h2>
                 <div class="spacer"></div>
-                <p class="section-subtitle"></p>
+                <p class="section-subtitle" ng-bind-html="'EDUCATION_SUBTITLE' | translate"></p>
             </header>
             <div class="row">
                 <div class="col-md-6">
                     <article class="education">
                         <header>
-                            <h3>School of the Art Institute of Chicago</h3>
-                            <p>Bachelor of Fine Arts - <strong>Graduated:</strong> 2004</p>
+                            <h3>UNINOVE</h3>
+                            <p ng-bind-html="'UNINOVE_COURSE' | translate"></p>
                         </header>
-                        <p>Lorem ipsum dolor sit amet, ut pri munere perfecto sadipscing, nam habeo legere disputationi ea. Vis nostrud intellegat eu, in vix erat abhorreant accommodare. Vix id elit albucius suavitate. Eos mentitum forensibus et. Vix et quidam moderatius, cu vim quem tibique constituam.</p>
+                        <p ng-bind-html="'UNINOVE_DESCRIPTION' | translate"></p>
                     </article>
                 </div>
                 <div class="col-md-6">
                     <article class="education">
                         <header>
-                            <h3>Rhode Island School of Design</h3>
-                            <p>Associates of Fine Arts - <strong>Graduated:</strong> 2002</p>
+                            <h3>FATEC</h3>
+                            <p ng-bind-html="'FATEC_COURSE' | translate"></p>
                         </header>
-                        <p>Lorem ipsum dolor sit amet, ut pri munere perfecto sadipscing, nam habeo legere disputationi ea. Vis nostrud intellegat eu, in vix erat abhorreant accommodare. Vix id elit albucius suavitate. Eos mentitum forensibus et. Vix et quidam moderatius, cu vim quem tibique constituam.</p>
+                        <p ng-bind-html="'FATEC_DESCRIPTION' | translate"></p>
                     </article>
                 </div>
             </div>
@@ -221,34 +221,43 @@
             <header class="section-header">
                 <h2 class="section-title"><span ng-bind-html="'EXPERIENCE' | translate "></span></h2>
                 <div class="spacer"></div>
-                <p class="section-subtitle">Lorem ipsum dolor sit amet, id iusto oportere mel. </p>
+                <p class="section-subtitle" ng-bind-html="'EXPERIENCE_SUBTITLE' | translate"></p>
             </header>
             <div class="row">
-                <div class="col-md-4">
+                <div class="col-md-3">
                     <article class="experience">
                         <header>
-                            <h3>Dropbox</h3>
-                            <p>Design Lead / San Francisco, CA / 2013 - Current</p>
+                            <h3>ST IT Consulting</h3>
+                            <p ng-bind-html="'ST_IT_OCCUPATION' | translate"></p>
                         </header>
-                        <p>Lorem ipsum dolor sit amet, ut pri munere perfecto sadipscing, nam habeo legere disputationi ea. Vis nostrud intellegat eu, in vix erat abhorreant accommodare. Vix id elit albucius suavitate. Eos mentitum forensibus et. Vix et quidam moderatius, cu vim quem tibique constituam.</p>
+                        <p ng-bind-html="'ST_IT_DESCRIPTION' | translate"></p>
                     </article>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-3">
                     <article class="experience">
                         <header>
-                            <h3>Instagram</h3>
-                            <p>Visual Designer / San Francisco, CA / 2010 - 2013</p>
+                            <h3>Digisystem</h3>
+                            <p ng-bind-html="'DIGISYSTEM_OCCUPATION' | translate"></p>
                         </header>
-                        <p>Lorem ipsum dolor sit amet, ut pri munere perfecto sadipscing, nam habeo legere disputationi ea. Vis nostrud intellegat eu, in vix erat abhorreant accommodare. Vix id elit albucius suavitate. Eos mentitum forensibus et. Vix et quidam moderatius, cu vim quem tibique constituam.</p>
+                        <p ng-bind-html="'DIGISYSTEM_DESCRIPTION' | translate"></p>
                     </article>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-3">
                     <article class="experience">
                         <header>
-                            <h3>Facebook</h3>
-                            <p>Product Designer / San Francisco, CA / 2005 - 2010</p>
+                            <h3>Hazit do Brasil Jogos Online</h3>
+                            <p ng-bind-html="'HAZIT_OCCUPATION' | translate"></p>
                         </header>
-                        <p>Lorem ipsum dolor sit amet, ut pri munere perfecto sadipscing, nam habeo legere disputationi ea. Vis nostrud intellegat eu, in vix erat abhorreant accommodare. Vix id elit albucius suavitate. Eos mentitum forensibus et. Vix et quidam moderatius, cu vim quem tibique constituam.</p>
+                        <p ng-bind-html="'HAZIT_DESCRIPTION' | translate"></p>
+                    </article>
+                </div>
+                <div class="col-md-3">
+                    <article class="experience">
+                        <header>
+                            <h3>Politec Tecnologia da Informação</h3>
+                            <p ng-bind-html="'POLITEC_OCCUPATION' | translate"></p>
+                        </header>
+                        <p ng-bind-html="'POLITEC_DESCRIPTION' | translate"></p>
                     </article>
                 </div>
             </div>
@@ -329,7 +338,6 @@
     <script src="js/angular/angular-translate.min.js"></script>
     <script src="js/angular/app.js"></script>
     <script src="js/angular/indexCtrl.js"></script>
-	<!-- Comentário teste do GitHub -->
 </body>
 
 </html>
