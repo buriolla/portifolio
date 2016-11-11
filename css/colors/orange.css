@@ -26,6 +26,16 @@ background: #e67e22;
 	color:#fff;
 }
 
+#page-contact .bg-danger 
+{
+    color: #000;
+}
+
+#page-contact .bg-success 
+{
+    color: #000;
+}
+
 .btn.btn-default:hover,
 .btn.btn-default:active{
     color:#e67e22;

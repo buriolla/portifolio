@@ -31,4 +31,12 @@ background: #3498db;
     color:#3498db;
 }
 
+#page-contact .bg-danger 
+{
+    color: #F00;
+}
 
+#page-contact .bg-success 
+{
+    color: #267F00;
+}    

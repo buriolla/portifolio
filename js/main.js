@@ -1,8 +1,8 @@
-$(document).ready(function() {
+$(document).ready(function () {
 
 
     /* Scroll hire me button to contact page */
-    $('.hire-me').click(function() {
+    $('.hire-me').click(function () {
         $('html, body').animate({
             scrollTop: $($(this).attr('href')).offset().top
         }, 500);
@@ -11,14 +11,14 @@ $(document).ready(function() {
 
     /* For Bootstrap current state on portfolio sorting */
 
-    $('ul.nav-pills li a').click(function(e) {
+    $('ul.nav-pills li a').click(function (e) {
         $('ul.nav-pills li.active').removeClass('active')
         $(this).parent('li').addClass('active')
     })
 
     /* portfolio mixitup */
 
-    $(window).load(function() {
+    $(window).load(function () {
         var $container = $('.grid-wrapper');
         $container.isotope({
             filter: '*',
@@ -29,7 +29,7 @@ $(document).ready(function() {
             }
         });
 
-        $('.grid-controls li a').click(function() {
+        $('.grid-controls li a').click(function () {
             $('.grid-controls .current').removeClass('current');
             $(this).addClass('current');
 
@@ -75,13 +75,13 @@ $(document).ready(function() {
 
     /* Charts*/
 
-    $('.chart').waypoint(function() {
+    $('.chart').waypoint(function () {
         $(this).easyPieChart({
             barColor: '#3498db',
             size: '150',
             easing: 'easeOutBounce',
-            onStep: function(from, to, percent) {
-                $(this.el).find('.percent').text(Math.round(percent));
+            onStep: function (from, to, percent) {
+                //$(this.el).find('.percent').text(Math.round(percent));
             }
         });
     }, {
@@ -89,26 +89,33 @@ $(document).ready(function() {
         offset: 'bottom-in-view'
     });
 
+    $("#pageSkillsLink").click(function () {
+        $('.chart').each(function (i, obj) {
+            $(obj).data('easyPieChart').update(0);
+            setTimeout(function () {
+                $(obj).data('easyPieChart').update(100);
+            }, 50);
+        });
+    });
+
 
     /* VEGAS Home Slider */
-	
-	    $('#page-welcome').vegas({
+
+    $('#page-welcome').vegas({
         slides: [
             { src: 'img/slider/01.jpg' },
             { src: 'img/slider/02.jpg' },
             { src: 'img/slider/03.jpg' },
 			{ src: 'img/slider/04.jpg' }
         ],
-    overlay: true
-});
+        overlay: true
+    });
 
-    $("#vegas-next").click(function() {
+    $("#vegas-next").click(function () {
         $('#page-welcome').vegas('next');
     });
-    $("#vegas-prev").click(function() {
-       $('#page-welcome').vegas('previous');
+    $("#vegas-prev").click(function () {
+        $('#page-welcome').vegas('previous');
     });
-
-
 
 });
