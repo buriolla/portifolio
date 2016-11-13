@@ -3,7 +3,8 @@ var gulp = require('gulp')
 , minifyCss = require("gulp-minify-css")
 , uglify = require("gulp-uglify")
 , concat = require("gulp-concat")
-, rename = require('gulp-rename');
+, rename = require('gulp-rename')
+, clean = require('gulp-clean');
 
 var jsDest = 'dist/js';
 var cssDest = 'dist/css';
@@ -57,8 +58,13 @@ gulp.task('style', function() {
         .pipe(gulp.dest(cssDest));
 });
 
+gulp.task('clean', function () {
+    return gulp.src('dist', {read: false})
+        .pipe(clean());
+});
+
 // task
-gulp.task('default', ['ganeralJS', 'style'], function () {
+gulp.task('default', ['clean', 'ganeralJS', 'style'], function () {
     gulp.src('./img/**/*.*') // path to your files
     .pipe(gulp.dest('dist/img'));
     gulp.src('./fonts/**/*.*') // path to your files
